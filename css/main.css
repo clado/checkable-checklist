@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 0 30%;
+  justify-content: center;
+}
+
+section {
+  padding: 0 15px;
+  max-width: 280px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.check {
+  font-family: FontAwesome;
+  font-size: 30px;
+  text-align: middle;
+  vertical-align: middle;
+}
+
+.done {
+  color: rgb(122, 202, 201);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1% 1% 0 0;
+}
+
+.reset {
+  background-color: #5cb85c;
+}
+
+label {
+  text-align: middle;
+  vertical-align: middle;
+}

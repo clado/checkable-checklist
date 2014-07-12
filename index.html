@@ -1,0 +1,33 @@
+<! DOCTYPE HTML>
+<html ng-app="checklistApp">
+	<head>
+    <meta charset="UTF-8">
+    <title>College Checklist</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/semantic-ui/elements/button.css" rel="stylesheet">
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/angular-local-storage.js" type="text/javascript"></script>
+    <script src="js/checklist-controller.js" type="text/javascript"></script>
+	</head>
+
+  <body ng-controller="ChecklistController as ctrl">
+    <div class="fixed">
+      <button class="teal tiny ui button" ng-click="ctrl.reset()">reset</button>
+    </div>
+    <h1>College Packing Checklist</h1>
+    <article>
+      <section ng-repeat="(section, items) in ctrl.list">
+        <h2>{{section}}</h2>
+        <div ng-repeat="(item, checked) in items">
+          <span class="check" ng-click="ctrl.check(section, item)">
+            <i name="$index" class="fa fa-check-square-o done" ng-show="checked"></i>
+            <i name="$index" class="fa fa-square-o" ng-hide="checked"></i>
+          </span>
+          <label for="$index">{{item}}</label>
+        </div>
+      </section>
+    </article>
+
+  </body>
+</html>

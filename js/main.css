@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  border: solid 2px #555;
+  border-radius: 5px;
+  background: #FFF;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  text-align: middle;
+  vertical-align: middle;
+}
+
+label {
+  text-align: middle;
+  vertical-align: middle;
+}
